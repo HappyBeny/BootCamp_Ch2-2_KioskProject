@@ -21,7 +21,7 @@ public class Menu {
             }
             System.out.println("0. Go to main menu");
             char choice = sc.next().charAt(0);
-            Integer choiceInt = Integer.parseInt(String.valueOf(choice));
+            int choiceInt = Integer.parseInt(String.valueOf(choice));
             sc.nextLine();
             if (choiceInt <= menuList.size() && choiceInt > 0) {
                 System.out.println(menuList.get(choiceInt - 1).getName().toUpperCase() + "를 선택하셨습니다.");
