@@ -12,8 +12,9 @@ public class MenuItem {
         this.description = description;
     }
 
+
     public String getMenuInfo(){
-        String info1 = String.format("%-14s", getName());
+        String info1 = String.format("%-20s", getName());
         String info2 = "| W " + getPrice() + " | " + getDescription();
         return info1 + info2;
     }
