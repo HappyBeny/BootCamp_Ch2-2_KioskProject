@@ -1,20 +1,20 @@
 package refLv1;
 
-
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Kiosk {
     Scanner sc = new Scanner(System.in);
     private Menu menu;
-    boolean TNF = true;
+    private final MyBasket myBasket = new MyBasket();
 
     public void start(){
-        while (TNF) {
+        while (true) {
             System.out.println("[ SHAKESHACK MENU ]");
             System.out.println("1. Burgers");
             System.out.println("2. Drinks");
             System.out.println("3. Desserts");
+            System.out.println("9. My Basket");
             System.out.println("0. Exit");
             char choice = sc.next().charAt(0);
             sc.nextLine();
@@ -33,6 +33,9 @@ public class Kiosk {
                     exitProcess();
                     sc.close();
                     return;
+                case '9':
+                    myBasket.showBasketMenu();
+                    break;
                 default:
                     wrong();
                     continue;
@@ -41,7 +44,12 @@ public class Kiosk {
             System.out.println(menu.getName().toUpperCase() + "MENU를 선택하셨습니다.");
             System.out.println();
 
-            menu.showMenuScreen();
+            MenuItem chosenMenu = menu.showMenuScreen();
+            if (chosenMenu != null) {
+                myBasket.addOnCart(chosenMenu);
+            } else {
+                System.out.println("초기 메뉴로 돌아갑니다.");
+            }
 
         }
     }
@@ -79,7 +87,7 @@ public class Kiosk {
     }
 
     public static void wrong(){
-        System.out.println("잘못된 숫자를 입력하셨습니다. 처음부터 다시 시도해주세요");
+        System.out.println("잘못된 입력입니다. 다시 시도해주세요");
         System.out.println();
     }
 
