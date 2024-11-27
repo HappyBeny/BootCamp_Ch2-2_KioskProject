@@ -37,6 +37,7 @@ public class Menu {
 
                 if (choice2 == 'Y') {
                     System.out.println(menuList.get(choiceInt-1).getName() + "메뉴를 장바구니에 추가합니다.");
+                    System.out.println();
                     return menuList.get(choiceInt-1);
                 } else {
                     return null;
