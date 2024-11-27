@@ -53,7 +53,7 @@ public class MyBasket {
                 System.out.println(itemCart.get(choiceInt - 1).getName() + " 항목을 정말 삭제하시겠습니까?");
                 System.out.println("[ Y / N ]");
                 char choice2 = sc.next().charAt(0);
-                if (choice2 == 'Y') {
+                if (Character.toUpperCase(choice2) == 'Y') {
                     itemCart.remove(choiceInt - 1);
                 } else {
                     Kiosk.wrong();

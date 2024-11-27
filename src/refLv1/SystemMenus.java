@@ -4,7 +4,16 @@ import java.util.Arrays;
 
 public class SystemMenus {
 
-    public static Menu setBurgerMenu(){
+    public void printFirstOptionMenu() {
+        System.out.println("[ SHAKESHACK MENU ]");
+        System.out.println("1. Burgers");
+        System.out.println("2. Drinks");
+        System.out.println("3. Desserts");
+        System.out.println("9. My Basket");
+        System.out.println("0. Exit");
+    }
+
+    public Menu setBurgerMenu(){
         return new Menu(
                 Arrays.asList(
                         new MenuItem("ShackBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거")
@@ -14,7 +23,7 @@ public class SystemMenus {
                 ), "Burger");
     }
 
-    public static Menu setDrinkMenu(){
+    public Menu setDrinkMenu(){
         return new Menu(
                 Arrays.asList(
                         new MenuItem("Coke", 1.5, "'ㅍㅅ'같은 가짜콜라가 아닌 진짜 콜라!")
@@ -25,7 +34,7 @@ public class SystemMenus {
         );
     }
 
-    public static Menu setDessertsMenu(){
+    public Menu setDessertsMenu(){
         return new Menu(
                 Arrays.asList(
                         new MenuItem("Custard FishBread", 2.0, "팥붕의 시대는 갔다. 달콤한 슈크림 붕어빵")
