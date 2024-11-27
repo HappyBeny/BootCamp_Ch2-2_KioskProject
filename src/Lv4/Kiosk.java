@@ -70,7 +70,7 @@ public class Kiosk {
     public void setDessertsMenu(){
         this.menu = new Menu(
                 Arrays.asList(
-                        new MenuItem("cream FishBread 3pcs", 2.0, "팥붕의 시대는 갔다. 달콤한 슈크림 붕어빵")
+                        new MenuItem("Custard FishBread", 2.0, "팥붕의 시대는 갔다. 달콤한 슈크림 붕어빵")
                         ,new MenuItem("Apple Pie", 2.0, "난 이거 먹는 사람 잘 못봤는데 맛있나?")
                         ,new MenuItem("Chicken nugget 6pcs", 2.0, "나의 의경시절을 달래준 영혼의 소울메이트")
                         ,new MenuItem("Big Chestnuts Bread", 4.5, "노력할만큼 했다 에라 모르겠는 메?뉴")
