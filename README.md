@@ -115,24 +115,27 @@
 </details>
 </details>
 
-<details><summary> MyBasket 클래스
-</summary>
-<details><summary> 속성값
-</summary>
+<details><summary> MyBasket 클래스</summary>
+<details><summary> 속성값</summary>
 
-*Write here!*
+- `List<MenuItem> itemCart`: 장바구니에 추가된 `MenuItem` 리스트를 저장하는 필드.<br>
+- `Scanner sc`: 사용자 입력을 받기 위한 스캐너.<br>
+
 </details>
 
-<details><summary> 생성자
-</summary>
+<details><summary> 생성자</summary>
 
-*Write here!*
+- `MyBasket()`: 장바구니 리스트를 초기화하는 기본 생성자.<br>
+
 </details>
 
-<details><summary> 메서드
-</summary>
+<details><summary> 메서드</summary>
 
-*Write here!*
+- `void addOnCart(MenuItem item)`: 장바구니에 메뉴 아이템을 추가하는 메서드.<br>
+- `void showBasketMenu()`: 장바구니 메뉴를 출력하고, 사용자 입력에 따라 삭제, 결제 또는 이전 메뉴로 돌아가는 메서드.<br>
+- `private void deleteItem()`: 사용자 선택에 따라 장바구니에서 특정 아이템을 삭제하는 메서드.<br>
+- `private void payProcess()`: 장바구니 총 금액을 계산하고 결제를 진행하는 메서드.<br>
+
 </details>
 </details>
 
