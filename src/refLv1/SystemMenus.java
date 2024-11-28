@@ -44,4 +44,18 @@ public class SystemMenus {
                 ), "Desserts"
         );
     }
+
+    public static void wrong(){
+        System.out.println("잘못된 입력입니다. 다시 시도해주세요");
+        System.out.println();
+    }
+
+    public static void prevMenu(){
+        System.out.println("이전 메뉴로 돌아갑니다.");
+        System.out.println();
+    }
+
+    public static void exitProcess(){
+        System.out.println("프로그램을 종료합니다.");
+    }
 }

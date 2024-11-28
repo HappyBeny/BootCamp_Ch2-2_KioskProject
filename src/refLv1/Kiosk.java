@@ -7,13 +7,18 @@ import java.util.Scanner;
 
 public class Kiosk {
     Scanner sc = new Scanner(System.in);
-    private SystemMenus sysMenu = new SystemMenus();
-//    private Menu menu;
+
+    // 시스템 메세지 담당
+    private final SystemMenus sysMenu = new SystemMenus();
+
+    // 각 카테고리 메뉴, 장바구니
     private final Menu burgerMenu = sysMenu.setBurgerMenu();
     private final Menu drinkMenu = sysMenu.setDrinkMenu();
     private final Menu dessertsMenu = sysMenu.setDessertsMenu();
     private final MyBasket myBasket = new MyBasket();
-    private Menu[] menuArr = {burgerMenu, drinkMenu, dessertsMenu};
+
+    // 카테고리 메뉴 리스트화.
+    private final ArrayList<Menu> menuArr = new ArrayList<>(Arrays.asList(burgerMenu,drinkMenu,dessertsMenu));
 
     public void start(){
         while (true) {
@@ -21,61 +26,27 @@ public class Kiosk {
             int choice = sc.next().charAt(0) - '0';
             sc.nextLine();
 
-            if(choice > 0 && choice < menuArr.length){
-                System.out.println(menuArr[choice-1].getName().toUpperCase() + " MENU를 선택하셨습니다.");
+            // 맨 처음 분기점 : 버거/음료/디저트/장바구니/종료/오류
+            if(choice > 0 && choice <= menuArr.size()){
+                System.out.println(menuArr.get(choice-1).getName().toUpperCase() + " MENU를 선택하셨습니다.");
                 System.out.println();
 
-                MenuItem chosenMenu = menuArr[choice - 1].showMenuScreen();
+                MenuItem chosenMenu = menuArr.get(choice - 1).showMenuScreen();
                 if (chosenMenu != null) {
                     myBasket.addOnCart(chosenMenu);
-                } else {
-                    System.out.println("잘못된 입력입니다. 초기 메뉴로 돌아갑니다.");
-                    System.out.println();
                 }
             }
-
-//            switch (choice) {
-//                case '1':
-//                    burgerMenu.showMenuScreen();
-//                    break;
-//                case '2':
-//                    drinkMenu.showMenuScreen();
-//                    break;
-//                case '3':
-//                    dessertsMenu.showMenuScreen();
-//                    break;
-//                case '0':
-//                    exitProcess();
-//                    sc.close();
-//                    return;
-//                case '9':
-//                    myBasket.showBasketMenu();
-//                    break;
-//                default:
-//                    wrong();
-//                    continue;
-//            }
-//
-//            System.out.println(menu.getName().toUpperCase() + "MENU를 선택하셨습니다.");
-//            System.out.println();
-//
-//            MenuItem chosenMenu = menu.showMenuScreen();
-//            if (chosenMenu != null) {
-//                myBasket.addOnCart(chosenMenu);
-//            } else {
-//                System.out.println("잘못된 입력입니다. 초기 메뉴로 돌아갑니다.");
-//            }
-
+            else if (choice == 9) {
+                myBasket.showBasketMenu();
+            }
+            else if (choice == 0) {
+                SystemMenus.exitProcess();
+                sc.close();
+                return;
+            }
+            else {
+                SystemMenus.wrong();
+            }
         }
     }
-
-    public static void wrong(){
-        System.out.println("잘못된 입력입니다. 다시 시도해주세요");
-        System.out.println();
-    }
-
-    public static void exitProcess(){
-        System.out.println("프로그램을 종료합니다.");
-    }
-
 }
