@@ -90,24 +90,28 @@
 </details>
 </details>
 
-<details><summary> MenuItem 클래스
-</summary>
-<details><summary> 속성값
-</summary>
+<details><summary> MenuItem 클래스</summary>
+<details><summary> 속성값</summary>
 
-*Write here!*
+- `String name`: 메뉴의 이름을 저장하는 필드.<br>
+- `double price`: 메뉴의 가격을 저장하는 필드.<br>
+- `String description`: 메뉴의 설명을 저장하는 필드.<br>
+
 </details>
 
-<details><summary> 생성자
-</summary>
+<details><summary> 생성자</summary>
 
-*Write here!*
+- `MenuItem(String name, double price, String description)`: 메뉴의 이름, 가격, 설명을 초기화하는 생성자.<br>
+
 </details>
 
-<details><summary> 메서드
-</summary>
+<details><summary> 메서드</summary>
 
-*Write here!*
+- `String getMenuInfo()`: 메뉴 이름, 가격, 설명을 포맷팅된 문자열로 반환하는 메서드.<br>
+- `String getName()`: 메뉴의 이름을 반환하는 메서드.<br>
+- `double getPrice()`: 메뉴의 가격을 반환하는 메서드.<br>
+- `String getDescription()`: 메뉴의 설명을 반환하는 메서드.<br>
+
 </details>
 </details>
 
