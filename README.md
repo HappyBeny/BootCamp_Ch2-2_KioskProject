@@ -133,25 +133,10 @@
 </details>
 </details>
 
-<details><summary> PrevMenuException 클래스
-</summary>
-<details><summary> 속성값
-</summary>
+<details><summary> PrevMenuException 클래스</summary>
 
-*Write here!*
-</details>
+- 이전 메뉴로 돌아가는 상황을 처리하기 위해 정의된 사용자 정의 예외 클래스.
 
-<details><summary> 생성자
-</summary>
-
-*Write here!*
-</details>
-
-<details><summary> 메서드
-</summary>
-
-*Write here!*
-</details>
 </details>
 
 
