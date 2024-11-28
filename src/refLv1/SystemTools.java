@@ -2,7 +2,7 @@ package refLv1;
 
 import java.util.Arrays;
 
-public class SystemMenus {
+public class SystemTools {
 
     public void printFirstOptionMenu() {
         System.out.println("[ SHAKESHACK MENU ]");

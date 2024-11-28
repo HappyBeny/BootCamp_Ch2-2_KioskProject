@@ -1,6 +1,5 @@
 package refLv1;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -45,7 +44,7 @@ public class Menu {
                         System.out.println("장바구니 등록을 취소합니다.");
                         return null;
                     } else {
-                        SystemMenus.wrong();
+                        SystemTools.wrong();
                     }
                 }
 
@@ -58,10 +57,10 @@ public class Menu {
 
             //예외 처리 프로세스
         } catch (PrevMenuException e) {
-            SystemMenus.prevMenu();
+            SystemTools.prevMenu();
             return null;
         } catch (Exception e){
-            SystemMenus.wrong();
+            SystemTools.wrong();
             return null;
         }
     }
