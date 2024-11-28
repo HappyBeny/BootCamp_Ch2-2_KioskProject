@@ -123,12 +123,6 @@
 
 </details>
 
-<details><summary> 생성자</summary>
-
-- `MyBasket()`: 장바구니 리스트를 초기화하는 기본 생성자.<br>
-
-</details>
-
 <details><summary> 메서드</summary>
 
 - `void addOnCart(MenuItem item)`: 장바구니에 메뉴 아이템을 추가하는 메서드.<br>
