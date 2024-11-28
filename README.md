@@ -30,15 +30,15 @@
 
 <details><summary> SystemTools 클래스</summary>
 
-  <details><summary> 메서드</summary>
+   <details><summary> 메서드</summary>
 
-  - `void printFirstOptionMenu` : 가장 처음 선택지를 출력 <br>
-  - `Menu setBurgerMenu`, `Menu setDrinkMenu`, `Menu setDessertsMenu` : 준비해둔 메뉴 리스트를 Menu타입으로 반환해주는 메서드. <br>
-  - `static void wrong` : 잘못된 입력을 받을 시 출력되는 메세지를 담은 메서드<br>
-  - `static void prevMenu` : 이전 메뉴로 돌아가기를 선택했을 때 출력되는 메세지를 담은 메서드.<br>
-  - `static void exitProcess` : 프로그램 종료 시 출력되는 메세지를 담은 메서드
+   - `void printFirstOptionMenu` : 가장 처음 선택지를 출력 <br>
+   - `Menu setBurgerMenu`, `Menu setDrinkMenu`, `Menu setDessertsMenu` : 준비해둔 메뉴 리스트를 Menu타입으로 반환해주는 메서드. <br>
+   - `static void wrong` : 잘못된 입력을 받을 시 출력되는 메세지를 담은 메서드<br>
+   - `static void prevMenu` : 이전 메뉴로 돌아가기를 선택했을 때 출력되는 메세지를 담은 메서드.<br>
+   - `static void exitProcess` : 프로그램 종료 시 출력되는 메세지를 담은 메서드
 
-  </details>
+   </details>
 
 </details>
 
