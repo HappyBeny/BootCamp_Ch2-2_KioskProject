@@ -47,25 +47,25 @@
 
 <details><summary> Kiosk 클래스
 </summary>
-<details><summary> 속성값
-</summary>
-
-- Scanner sc : 사용자의 입력을 받기 위한 스캐너<br>
-
-- SystemTools sysMenu : 시스템 메세지를 출력하기 위한 도구<br>
-
-- Menu burgerMenu, Menu drinkMenu, Menu dessertsMenu : 각 카테고리의 MenuItem을 리스트로 담아둠<br>
-
-- MyBasket myBasket : 물건 담기, 삭제, 결제가 가능한 장바구니<br>
-
-- ArrayList\<Menu> menuArr : 세 가지 Menu들을 담아둔 리스트<br>
-</details>
-
-<details><summary> 메서드
-</summary>
-
-- void start : 초기 메뉴화면을 보여주고, 입력값에 따라 각 카테고리/장바구니/종료 로 접근할 수 있게 하는 메서드
-</details>
+  <details><summary> 속성값
+  </summary>
+  
+  - Scanner sc : 사용자의 입력을 받기 위한 스캐너<br>
+  
+  - SystemTools sysMenu : 시스템 메세지를 출력하기 위한 도구<br>
+  
+  - Menu burgerMenu, Menu drinkMenu, Menu dessertsMenu : 각 카테고리의 MenuItem을 리스트로 담아둠<br>
+  
+  - MyBasket myBasket : 물건 담기, 삭제, 결제가 가능한 장바구니<br>
+  
+  - ArrayList\<Menu> menuArr : 세 가지 Menu들을 담아둔 리스트<br>
+  </details>
+  
+  <details><summary> 메서드
+  </summary>
+  
+  - void start : 초기 메뉴화면을 보여주고, 입력값에 따라 각 카테고리/장바구니/종료 로 접근할 수 있게 하는 메서드
+  </details>
 </details>
 
 <details><summary> Menu 클래스
