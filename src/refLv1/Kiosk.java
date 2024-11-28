@@ -2,14 +2,13 @@ package refLv1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Kiosk {
     Scanner sc = new Scanner(System.in);
 
     // 시스템 메세지 담당
-    private final SystemMenus sysMenu = new SystemMenus();
+    private final SystemTools sysMenu = new SystemTools();
 
     // 각 카테고리 메뉴, 장바구니
     private final Menu burgerMenu = sysMenu.setBurgerMenu();
@@ -40,12 +39,12 @@ public class Kiosk {
                 myBasket.showBasketMenu();
             }
             else if (choice == 0) {
-                SystemMenus.exitProcess();
+                SystemTools.exitProcess();
                 sc.close();
                 return;
             }
             else {
-                SystemMenus.wrong();
+                SystemTools.wrong();
             }
         }
     }

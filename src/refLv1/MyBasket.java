@@ -66,10 +66,10 @@ public class MyBasket {
                     System.out.println();
                     break;
                 } else {
-                    SystemMenus.wrong();
+                    SystemTools.wrong();
                 }
             } else {
-                SystemMenus.wrong();
+                SystemTools.wrong();
             }
         }
     }
@@ -92,7 +92,7 @@ public class MyBasket {
                 System.out.println();
                 break;
             } else {
-                SystemMenus.wrong();
+                SystemTools.wrong();
             }
         }
     }
