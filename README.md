@@ -44,99 +44,113 @@
 
 </details>
 
-<details><summary> Kiosk 클래스
-</summary>
-<details>
-<summary> 속성값
-</summary>
+<details><summary> Kiosk 클래스</summary>
 
-- `Scanner sc` : 사용자의 입력을 받기 위한 스캐너<br>
+<ul>
+  <details><summary> 속성값</summary>
+  <ul>
+    <li>`Scanner sc`: 사용자의 입력을 받기 위한 스캐너</li>
+    <li>`SystemTools sysMenu`: 시스템 메세지를 출력하기 위한 도구</li>
+    <li>`Menu burgerMenu`, `Menu drinkMenu`, `Menu dessertsMenu`: 각 카테고리의 MenuItem을 리스트로 담아둠</li>
+    <li>`MyBasket myBasket`: 물건 담기, 삭제, 결제가 가능한 장바구니</li>
+    <li>`ArrayList<Menu> menuArr`: 세 가지 Menu들을 담아둔 리스트</li>
+  </ul>
+  </details>
 
-- `SystemTools sysMenu` : 시스템 메세지를 출력하기 위한 도구<br>
+  <details><summary> 메서드</summary>
+  <ul>
+    <li>`void start`: 초기 메뉴화면을 보여주고, 입력값에 따라 각 카테고리/장바구니/종료로 접근할 수 있게 하는 메서드</li>
+  </ul>
+  </details>
 
-- `Menu burgerMenu`, `Menu drinkMenu`, `Menu dessertsMenu` : 각 카테고리의 MenuItem을 리스트로 담아둠<br>
-
-- `MyBasket myBasket` : 물건 담기, 삭제, 결제가 가능한 장바구니<br>
-
-- `ArrayList\<Menu> menuArr` : 세 가지 Menu들을 담아둔 리스트<br>
+</ul>
 </details>
 
-<details><summary> 메서드
-</summary>
+<details><summary> Menu 클래스</summary>
 
-- `void start` : 초기 메뉴화면을 보여주고, 입력값에 따라 각 카테고리/장바구니/종료 로 접근할 수 있게 하는 메서드
-</details>
-</details>
+<ul>
+  <details><summary> 속성값</summary>
+  <ul>
+    <li>`List<MenuItem> menuList`: 메뉴 항목 리스트를 저장하는 필드</li>
+    <li>`String name`: 메뉴의 이름을 저장하는 필드</li>
+  </ul>
+  </details>
 
-<details><summary> Menu 클래스
-</summary>
-<details><summary> 속성값</summary>
+  <details><summary> 생성자</summary>
+  <ul>
+    <li>`Menu(List<MenuItem> menuList, String name)`: 메뉴 리스트와 이름을 초기화하는 생성자</li>
+  </ul>
+  </details>
 
-- `List<MenuItem> menuList`: 메뉴 항목 리스트를 저장하는 필드.<br>
+  <details><summary> 메서드</summary>
+  <ul>
+    <li>`MenuItem showMenuScreen()`: 메뉴 화면을 출력하고, 사용자의 선택에 따라 메뉴 항목을 반환하거나 장바구니 추가 로직을 처리하는 메서드</li>
+    <li>`String getName()`: 메뉴의 이름을 반환하는 메서드</li>
+  </ul>
+  </details>
 
-- `String name`: 메뉴의 이름을 저장하는 필드.<br>
-</details> 
-
-<details><summary> 생성자</summary>
-
-- `Menu(List<MenuItem> menuList, String name)`: 메뉴 리스트와 이름을 초기화하는 생성자.<br>
-</details> 
-
-<details><summary> 메서드</summary>
-
-- `MenuItem showMenuScreen()`: 메뉴 화면을 출력하고, 사용자의 선택에 따라 메뉴 항목을 반환하거나 장바구니 추가 로직을 처리하는 메서드.<br>
-- `String getName()`: 메뉴의 이름을 반환하는 메서드.<br>
-</details>
+</ul>
 </details>
 
 <details><summary> MenuItem 클래스</summary>
-<details><summary> 속성값</summary>
 
-- `String name`: 메뉴의 이름을 저장하는 필드.<br>
-- `double price`: 메뉴의 가격을 저장하는 필드.<br>
-- `String description`: 메뉴의 설명을 저장하는 필드.<br>
+<ul>
+  <details><summary> 속성값</summary>
+  <ul>
+    <li>`String name`: 메뉴의 이름을 저장하는 필드</li>
+    <li>`double price`: 메뉴의 가격을 저장하는 필드</li>
+    <li>`String description`: 메뉴의 설명을 저장하는 필드</li>
+  </ul>
+  </details>
 
-</details>
+  <details><summary> 생성자</summary>
+  <ul>
+    <li>`MenuItem(String name, double price, String description)`: 메뉴의 이름, 가격, 설명을 초기화하는 생성자</li>
+  </ul>
+  </details>
 
-<details><summary> 생성자</summary>
+  <details><summary> 메서드</summary>
+  <ul>
+    <li>`String getMenuInfo()`: 메뉴 이름, 가격, 설명을 포맷팅된 문자열로 반환하는 메서드</li>
+    <li>`String getName()`: 메뉴의 이름을 반환하는 메서드</li>
+    <li>`double getPrice()`: 메뉴의 가격을 반환하는 메서드</li>
+    <li>`String getDescription()`: 메뉴의 설명을 반환하는 메서드</li>
+  </ul>
+  </details>
 
-- `MenuItem(String name, double price, String description)`: 메뉴의 이름, 가격, 설명을 초기화하는 생성자.<br>
-
-</details>
-
-<details><summary> 메서드</summary>
-
-- `String getMenuInfo()`: 메뉴 이름, 가격, 설명을 포맷팅된 문자열로 반환하는 메서드.<br>
-- `String getName()`: 메뉴의 이름을 반환하는 메서드.<br>
-- `double getPrice()`: 메뉴의 가격을 반환하는 메서드.<br>
-- `String getDescription()`: 메뉴의 설명을 반환하는 메서드.<br>
-
-</details>
+</ul>
 </details>
 
 <details><summary> MyBasket 클래스</summary>
-<details><summary> 속성값</summary>
 
-- `List<MenuItem> itemCart`: 장바구니에 추가된 `MenuItem` 리스트를 저장하는 필드.<br>
-- `Scanner sc`: 사용자 입력을 받기 위한 스캐너.<br>
+<ul>
+  <details><summary> 속성값</summary>
+  <ul>
+    <li>`List<MenuItem> itemCart`: 장바구니에 추가된 `MenuItem` 리스트를 저장하는 필드</li>
+    <li>`Scanner sc`: 사용자 입력을 받기 위한 스캐너</li>
+  </ul>
+  </details>
 
-</details>
+  <details><summary> 메서드</summary>
+  <ul>
+    <li>`void addOnCart(MenuItem item)`: 장바구니에 메뉴 아이템을 추가하는 메서드</li>
+    <li>`void showBasketMenu()`: 장바구니 메뉴를 출력하고, 사용자 입력에 따라 삭제, 결제 또는 이전 메뉴로 돌아가는 메서드</li>
+    <li>`private void deleteItem()`: 사용자 선택에 따라 장바구니에서 특정 아이템을 삭제하는 메서드</li>
+    <li>`private void payProcess()`: 장바구니 총 금액을 계산하고 결제를 진행하는 메서드</li>
+  </ul>
+  </details>
 
-<details><summary> 메서드</summary>
-
-- `void addOnCart(MenuItem item)`: 장바구니에 메뉴 아이템을 추가하는 메서드.<br>
-- `void showBasketMenu()`: 장바구니 메뉴를 출력하고, 사용자 입력에 따라 삭제, 결제 또는 이전 메뉴로 돌아가는 메서드.<br>
-- `private void deleteItem()`: 사용자 선택에 따라 장바구니에서 특정 아이템을 삭제하는 메서드.<br>
-- `private void payProcess()`: 장바구니 총 금액을 계산하고 결제를 진행하는 메서드.<br>
-
-</details>
+</ul>
 </details>
 
 <details><summary> PrevMenuException 클래스</summary>
 
-- 이전 메뉴로 돌아가는 상황을 처리하기 위해 정의된 사용자 정의 예외 클래스.
+<ul>
+  <li>이전 메뉴로 돌아가는 상황을 처리하기 위해 정의된 사용자 정의 예외 클래스</li>
+</ul>
 
 </details>
+
 
 
 <br><br>
