@@ -71,22 +71,22 @@
 
 <details><summary> Menu 클래스
 </summary>
-<details><summary> 속성값
-</summary>
+<details><summary> 속성값</summary>
 
-*Write here!*
-</details>
+- List<MenuItem> menuList: 메뉴 항목 리스트를 저장하는 필드.<br>
 
-<details><summary> 생성자
-</summary>
+- String name: 메뉴의 이름을 저장하는 필드.<br>
+</details> 
 
-*Write here!*
-</details>
+<details><summary> 생성자</summary>
 
-<details><summary> 메서드
-</summary>
+- Menu(List<MenuItem> menuList, String name): 메뉴 리스트와 이름을 초기화하는 생성자.<br>
+</details> 
 
-*Write here!*
+<details><summary> 메서드</summary>
+
+- MenuItem showMenuScreen(): 메뉴 화면을 출력하고, 사용자의 선택에 따라 메뉴 항목을 반환하거나 장바구니 추가 로직을 처리하는 메서드.<br>
+- String getName(): 메뉴의 이름을 반환하는 메서드.<br>
 </details>
 </details>
 
