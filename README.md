@@ -33,15 +33,15 @@
 <details><summary> 메서드
 </summary>
 
-- void printFirstOptionMenu : 가장 처음 선택지를 출력 <br>
+- 'void printFirstOptionMenu' : 가장 처음 선택지를 출력 <br>
 
-- Menu setBurgerMenu, Menu setDrinkMenu, Menu setDessertsMenu : 준비해둔 메뉴 리스트를 Menu타입으로 반환해주는 메서드. <br>
+- 'Menu setBurgerMenu', 'Menu setDrinkMenu', 'Menu setDessertsMenu' : 준비해둔 메뉴 리스트를 Menu타입으로 반환해주는 메서드. <br>
 
-- static void wrong : 잘못된 입력을 받을 시 출력되는 메세지를 담은 메서드<br>
+- 'static void wrong' : 잘못된 입력을 받을 시 출력되는 메세지를 담은 메서드<br>
 
-- static void prevMenu : 이전 메뉴로 돌아가기를 선택했을 때 출력되는 메세지를 담은 메서드.<br>
+- 'static void prevMenu' : 이전 메뉴로 돌아가기를 선택했을 때 출력되는 메세지를 담은 메서드.<br>
 
-- static void exitProcess : 프로그램 종료 시 출력되는 메세지를 담은 메서드
+- 'static void exitProcess' : 프로그램 종료 시 출력되는 메세지를 담은 메서드
 </details>
 </details>
 
@@ -51,21 +51,21 @@
 <summary> 속성값
 </summary>
 
-- Scanner sc : 사용자의 입력을 받기 위한 스캐너<br>
+- 'Scanner sc' : 사용자의 입력을 받기 위한 스캐너<br>
 
-- SystemTools sysMenu : 시스템 메세지를 출력하기 위한 도구<br>
+- 'SystemTools sysMenu' : 시스템 메세지를 출력하기 위한 도구<br>
 
-- Menu burgerMenu, Menu drinkMenu, Menu dessertsMenu : 각 카테고리의 MenuItem을 리스트로 담아둠<br>
+- 'Menu burgerMenu', 'Menu drinkMenu', 'Menu dessertsMenu' : 각 카테고리의 MenuItem을 리스트로 담아둠<br>
 
-- MyBasket myBasket : 물건 담기, 삭제, 결제가 가능한 장바구니<br>
+- 'MyBasket myBasket' : 물건 담기, 삭제, 결제가 가능한 장바구니<br>
 
-- ArrayList\<Menu> menuArr : 세 가지 Menu들을 담아둔 리스트<br>
+- 'ArrayList\<Menu> menuArr' : 세 가지 Menu들을 담아둔 리스트<br>
 </details>
 
 <details><summary> 메서드
 </summary>
 
-- void start : 초기 메뉴화면을 보여주고, 입력값에 따라 각 카테고리/장바구니/종료 로 접근할 수 있게 하는 메서드
+- 'void start' : 초기 메뉴화면을 보여주고, 입력값에 따라 각 카테고리/장바구니/종료 로 접근할 수 있게 하는 메서드
 </details>
 </details>
 
@@ -73,14 +73,14 @@
 </summary>
 <details><summary> 속성값</summary>
 
-- List<MenuItem> menuList: 메뉴 항목 리스트를 저장하는 필드.<br>
+- 'List<MenuItem> menuList': 메뉴 항목 리스트를 저장하는 필드.<br>
 
-- String name: 메뉴의 이름을 저장하는 필드.<br>
+- 'String name': 메뉴의 이름을 저장하는 필드.<br>
 </details> 
 
 <details><summary> 생성자</summary>
 
-- Menu(List<MenuItem> menuList, String name): 메뉴 리스트와 이름을 초기화하는 생성자.<br>
+- 'Menu(List<MenuItem> menuList, String name)': 메뉴 리스트와 이름을 초기화하는 생성자.<br>
 </details> 
 
 <details><summary> 메서드</summary>
